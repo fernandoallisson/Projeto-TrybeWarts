@@ -29,3 +29,15 @@ flex-direction: column;
     height: 500px;
 
 }
+.fullname{
+    display: flex;
+    width: 100%;
+}
+.inf{
+    display: flex;
+    width: 100%;
+}
+#label-family{
+    display: flex;
+    flex-direction: column;
+}
