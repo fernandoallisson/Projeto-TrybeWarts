@@ -1,15 +1,17 @@
-const email = (document.querySelector("#email").value);
-const senha = (document.querySelector("#password").value);
-const button = (document.querySelector("#button"))
+window.onload = () => {
 
-const erroEmail = () => {
-    console.log(email)
-    console.log(senha)
- if(email == "trybe@test.com" && senha == "123456"){
-    alert("Olá, Tryber!")
- }
- else{
-    alert("Email ou senha inválidos.")
- }
+   const button = (document.querySelector("#button"));
+
+   const erroEmail = () => {
+      const email = (document.querySelector("#email").value);
+      const senha = (document.querySelector("#password").value);
+      if (email == "trybe@test.com" && senha == "123456") {
+         alert("Olá, Tryber!")
+      } else {
+         alert("Email ou senha inválidos.");
+      };
+   }
+   button.addEventListener("click", erroEmail);
+
 }
-button.addEventListener("click", erroEmail )
+
