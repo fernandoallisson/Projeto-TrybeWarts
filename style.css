@@ -3,8 +3,16 @@ display: flex;
 }
 .header{
     background-color: rgb(58, 167, 145);
-    width: 100%
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .trybewarts-login{
     display: flex;
+}
+
+.trybewarts-header-logo{
+    width: 80%;
+   
 }
