@@ -13,5 +13,27 @@ window.onload = () => {
    }
    button.addEventListener("click", erroEmail);
 
+   const enviar = (document.querySelector("#submit-btn"));
+   const checar = (document.querySelector("#agreement"));
+   
+   const check = () =>{
+    if ( checar.checked ){
+    return true
+    }
+    else{
+    return false     
+    }
+  
+   }
+  
+   const verificaçaoEnviar = () =>{
+    if(check === true ){
+    enviar.remove = disabled
+    }
+  
+   }
+   verificaçaoEnviar()
 }
+
+
 
