@@ -33,4 +33,15 @@ window.onload = () => {
 
    checar.addEventListener('click', verificacaoEnviar);
 
+   const counter = document.querySelector("#textareacounter");
+   const area = document.querySelector("#textareainput");
+   let contador = 500
+  
+   area.addEventListener("input",() => {
+   
+const numeroCarac = area.value.length; 
+counter.innerHTML = contador - numeroCarac
+   
+    
+   })
 }
