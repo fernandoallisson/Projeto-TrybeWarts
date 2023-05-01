@@ -20,25 +20,22 @@ const check = () => {
   } return false;
 };
 
-   const verificacaoEnviar = () => {
-      if (check()) {
-         enviar.disabled = false;
-      } else {
-         enviar.disabled = true;
-      } 
-   }
+const verificacaoEnviar = () => {
+  const enviar = document.querySelector('#submit-btn'); // Pega  o botão enviar (o botão de submeter do form da main);
+  if (check()) {
+    enviar.disabled = false;
+  } else {
+    enviar.disabled = true;
+  }
+};
 
-   checar.addEventListener('click', verificacaoEnviar);
+window.onload = () => {
+  const checar = document.querySelector('#agreement'); // Checkbox de verificação para que o #submit-btn seja ativado;
+  checar.addEventListener('click', verificacaoEnviar); // Isso vai pegar a função para verificar se o check está habilitado para fazer o envio das informações, e vice-versa;
 
-   const counter = document.querySelector("#textareacounter");
-   const area = document.querySelector("#textareainput");
-   let contador = 500
-  
-   area.addEventListener("input",() => {
-   
-const numeroCarac = area.value.length; 
-counter.innerHTML = contador - numeroCarac
-   
-    
-   })
-}
+  button.addEventListener('click', erroEmail);
+  area.addEventListener('input', () => {
+    const numeroCarac = area.value.length;
+    counter.innerHTML = contador - numeroCarac;
+  });
+};
