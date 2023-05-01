@@ -11,6 +11,7 @@ body {
 }
 .trybewarts-login {
   display: flex;
+  margin: 40px;
 }
 
 .trybewarts-header-logo {
@@ -18,6 +19,8 @@ body {
 }
 #main {
   display: flex;
+  justify-content: center;
+  margin: 50px;
 }
 #evaluation-form {
   width: 675px;
@@ -26,6 +29,7 @@ body {
 }
 #trybewarts-forms-logo {
   height: 500px;
+
 }
 .fullname {
   display: flex;
@@ -41,5 +45,25 @@ body {
 }
 #sectiontec{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 10px;
+    flex-wrap: wrap;
+    
+}
+#email{
+  margin: 10px;
+}
+#password{
+  margin: 10px;
+}
+#button{
+  margin: 10px;
+}
+#footer{
+  display: flex;
+  justify-content: center;
+}
+.label{
+  width: 25%;
+  flex-wrap: wrap
 }
