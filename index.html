@@ -66,24 +66,28 @@
             </section>
             <section id="evaluation">
                 <label id="label-rate">Como você avalia a Trybewarts?</label>
-                <label><input type="radio" name="rate" value="1"></label>
-                <label><input type="radio" name="rate" value="2"></label>
-                <label><input type="radio" name="rate" value="3"></label>
-                <label><input type="radio" name="rate" value="4"></label>
-                <label><input type="radio" name="rate" value="5"></label>
-                <label><input type="radio" name="rate" value="6"></label>
-                <label><input type="radio" name="rate" value="7"></label>
-                <label><input type="radio" name="rate" value="8"></label>
-                <label><input type="radio" name="rate" value="9"></label>
-                <label><input type="radio" name="rate" value="10"></label>
+                <label for="num1"><input type="radio" name="rate" value="1" id="num1">1</label>
+                <label for="num2"><input type="radio" name="rate" value="2" id="num2">2</label>
+                <label for="num3"><input type="radio" name="rate" value="3" id="num3">3</label>
+                <label for="num4"><input type="radio" name="rate" value="4" id="num4">4</label>
+                <label for="num5"><input type="radio" name="rate" value="5" id="num5">5</label>
+                <label for="num6"><input type="radio" name="rate" value="6" id="num6">6</label>
+                <label for="num7"><input type="radio" name="rate" value="7" id="num7">7</label>
+                <label for="num8"><input type="radio" name="rate" value="8" id="num8">8</label>
+                <label for="num9"><input type="radio" name="rate" value="9" id="num9">9</label>
+                <label for="num10"><input type="radio" name="rate" value="10" id="num10">10</label>
             </section>
-            <label class="textarea">Deixe seu comentário:<textarea  maxlength="500" name="" id="textareainput" cols="30" rows="10"></textarea></label>
-            <div><p id="textareacounter"></p></div>        
-             <input type="checkbox" id="agreement"><label id="label-infos">Você concorda com o uso das informações acima?</label>
-             <button id="submit-btn" type="submit"disabled >Enviar</button>
-            </form>
-
-
+            <label class="textarea">Deixe seu comentário:<textarea maxlength="500" name="" id="textareainput" cols="30"
+                    rows="10"></textarea></label>
+            <div>
+                <p id="textareacounter"></p>
+            </div>
+            <div class="checagem">
+                <input type="checkbox" id="agreement">
+                <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+            </div>
+            <button id="submit-btn" type="submit" disabled>Enviar</button>
+        </form>
         <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo" />
     </main>
     <footer>Direitos reservados à Trybewarts©</footer>
