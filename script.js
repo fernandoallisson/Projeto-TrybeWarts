@@ -1,5 +1,5 @@
 const button = (document.querySelector('#button')); // Pega  o botão enviar (o botão de submeter do form do header);
-const counter = document.querySelector('#textareacounter'); // A div que conterá a quantidade de caracteres faltando para parar de escrever;
+const counter = document.querySelector('#counter'); // A div que conterá a quantidade de caracteres faltando para parar de escrever;
 
 const erroEmail = () => {
   const email = (document.querySelector('#email').value); // Pega o input do e-mail;
@@ -32,7 +32,7 @@ window.onload = () => {
   checar.addEventListener('click', verificacaoEnviar); // Isso vai pegar a função para verificar se o check está habilitado para fazer o envio das informações, e vice-versa;
 
   button.addEventListener('click', erroEmail);
-  const area = document.querySelector('#textareainput'); // Essa é a área que terá no máximo 500 caracteres.
+  const area = document.querySelector('#textarea'); // Essa é a área que terá no máximo 500 caracteres.
   const contador = 500;
   area.addEventListener('input', () => {
     const numeroCarac = area.value.length;
