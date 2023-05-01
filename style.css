@@ -54,10 +54,9 @@ body {
 
 #sectiontec {
   display: flex;
+  flex-flow: wrap;
   flex-direction: row;
   margin: 10px;
-  flex-wrap: wrap;
-
 }
 
 #email {
@@ -79,5 +78,5 @@ body {
 
 .label {
   width: 25%;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
