@@ -40,8 +40,7 @@ window.onload = () => {
    area.addEventListener("input",() => {
    
 const numeroCarac = area.value.length; 
-counter.innerHTML = contador - numeroCarac
-   
-    
+counter.innerHTML = contador - numeroCarac  
    })
+   
 }
